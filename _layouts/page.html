@@ -1,9 +1,6 @@
---- 
-layout: default 
---- 
-{{ content }}
-<hr>
-<!-- Blog Comments -->
-<div class="media">
-  {% include comment.html %} 
-</div>
+---
+layout: default
+---
+
+{% assign lang = site.data.languages[site.language] %}
+{% include page.html %}
